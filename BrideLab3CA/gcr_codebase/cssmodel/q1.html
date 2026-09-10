@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Padding</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        /* Arrange boxes horizontally */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Common box styling */
+        .box {
+            width: 160px;
+            background-color: white;
+            transition: border-color 0.4s ease;
+        }
+
+        /* Change border color on hover */
+        .box:hover {
+            border-color: red;
+        }
+
+        .solid {
+            border: 5px solid blue;
+            padding: 30px;
+        }
+
+        .dashed {
+            border: 5px dashed green;
+            padding: 20px;
+        }
+
+        .double {
+            border: 8px double purple;
+            padding: 15px;
+        }
+
+        .groove {
+            border: 8px groove orange;
+            padding: 25px;
+        }
+
+        .rounded {
+            border: 5px solid brown;
+            border-radius: 25px;
+            padding: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Borders and Padding Demonstration</h1>
+
+    <main class="container">
+
+        <div class="box solid">
+            Solid Border
+        </div>
+
+        <div class="box dashed">
+            Dashed Border
+        </div>
+
+        <div class="box double">
+            Double Border
+        </div>
+
+        <div class="box groove">
+            Groove Border
+        </div>
+
+        <div class="box rounded">
+            Rounded Corner
+        </div>
+
+    </main>
+
+</body>
+</html>
