@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q6 Responsive CSS Cheat Sheet</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#eae5ff;padding:40px}
+h1{text-align:center;margin-bottom:30px}
+.cheat{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1000px;margin:auto}
+.box{background:white;padding:25px;border-radius:12px;transition:transform .3s,box-shadow .3s}
+.box:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.box h2{margin-bottom:10px}.box p{line-height:1.6}
+@media(max-width:700px){.cheat{grid-template-columns:1fr}.box{display:grid;grid-template-columns:130px 1fr;gap:15px;align-items:start}}
+</style>
+</head>
+<body>
+<main><h1>Responsive CSS Cheat Sheet</h1><section class="cheat">
+<article class="box"><h2>Filters</h2><p>Example: filter: grayscale(100%);</p></article>
+<article class="box"><h2>Media Queries</h2><p>Example: @media (max-width: 700px) { }</p></article>
+<article class="box"><h2>Responsive Design</h2><p>Use flexible layouts that work on different devices.</p></article>
+<article class="box"><h2>Typography</h2><p>Example: font-size: clamp(1rem, 2vw, 1.5rem);</p></article>
+</section></main>
+</body>
+</html>

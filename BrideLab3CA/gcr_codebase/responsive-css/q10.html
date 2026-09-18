@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q10 Responsive Dashboard</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#eae5ff}
+.dashboard{min-height:100vh;display:grid;grid-template-columns:220px 1fr;grid-template-rows:80px 1fr}
+header{grid-column:1/-1;background:#333;color:white;padding:25px 30px}
+aside{background:#d8d0f5;padding:30px}
+aside ul{list-style:none;line-height:2.5}
+.content{padding:30px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:12px;animation:load .7s ease;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,.18)}
+.card h2{margin-bottom:10px}
+@keyframes load{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:750px){.dashboard{display:grid;grid-template-columns:1fr;grid-template-rows:auto auto 1fr}header{grid-column:auto}aside{padding:20px}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="dashboard">
+<header><h1>Responsive CSS Dashboard</h1></header>
+<aside><h2>Menu</h2><ul><li>Home</li><li>Topics</li><li>Examples</li><li>Contact</li></ul></aside>
+<main class="content"><section class="cards">
+<article class="card"><h2>Filters</h2><p>Use CSS filter properties such as grayscale, sepia and contrast.</p></article>
+<article class="card"><h2>Typography</h2><p>Use clamp() and relative units for responsive text.</p></article>
+<article class="card"><h2>Media Queries</h2><p>Change styles at breakpoints for different screen sizes.</p></article>
+<article class="card"><h2>Cheat Sheet Links</h2><p>Grid, Flexbox, filters, media queries and responsive typography.</p></article>
+</section></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q3 Responsive Cards</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#eae5ff;padding:40px}
+h1{text-align:center;margin-bottom:30px}
+.cards{display:flex;flex-wrap:wrap;gap:25px;justify-content:center}
+.card{width:calc(25% - 20px);min-width:200px;background:white;padding:25px;border-radius:12px;text-align:center;transition:background .3s}
+.card:hover{background:#d8ccff}
+@media(max-width:900px){.card{width:calc(50% - 15px)}}
+@media(max-width:600px){body{padding:20px}.card{width:100%}}
+</style>
+</head>
+<body>
+<main><h1>Responsive Cards</h1><section class="cards">
+<article class="card"><h2>Card 1</h2><p>HTML and CSS basics.</p></article>
+<article class="card"><h2>Card 2</h2><p>Responsive layouts.</p></article>
+<article class="card"><h2>Card 3</h2><p>Media queries.</p></article>
+<article class="card"><h2>Card 4</h2><p>Flexbox design.</p></article>
+</section></main>
+</body>
+</html>

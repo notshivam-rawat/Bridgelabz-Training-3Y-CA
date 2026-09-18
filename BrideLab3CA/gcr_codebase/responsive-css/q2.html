@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 Responsive Web Design Layout</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#eae5ff;min-height:100vh;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#333;color:white}
+nav{display:flex;gap:25px}nav a{color:white;text-decoration:none}
+main{flex:1;padding:50px 30px}.features{display:flex;gap:25px;justify-content:center}
+.feature{background:white;padding:30px;flex:1;max-width:300px;border-radius:12px;text-align:center;transition:transform .3s}
+.feature:hover{transform:scale(1.05)}
+footer{text-align:center;padding:20px;background:#333;color:white}
+@media(max-width:750px){header{flex-direction:column;gap:15px}.features{flex-direction:column;align-items:center}.feature{max-width:500px;width:100%}}
+</style>
+</head>
+<body>
+<header><h1>My Website</h1><nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav></header>
+<main><section class="features">
+<article class="feature"><h2>Design</h2><p>Simple and clean web design.</p></article>
+<article class="feature"><h2>Responsive</h2><p>Works on different screen sizes.</p></article>
+<article class="feature"><h2>Performance</h2><p>Fast and easy to use pages.</p></article>
+</section></main>
+<footer><p>© 2026 My Website</p></footer>
+</body>
+</html>
